@@ -1,5 +1,6 @@
 <h1>📸 <i>  <mark> Image Scraper — Automate  Image Collection </mark> </i></h1> 
 
+
 What if collecting hundreds of images from Google was as simple as typing a keyword and clicking a button?
 
 **Image Scraper** is a Streamlit-based web app that automates image scraping from Google,Flipkart,meesho web app. Designed for developers, researchers, and creators who need fast access to visual data—without the manual grind.
@@ -13,12 +14,13 @@ Manual image collection is slow, repetitive, and error-prone. Whether you're tra
 ---
 
 ## ✨ Features
+```
 - Developed a simple Streamlit UI  To Search Term 🔍 and Download  Image Folder
 - Selected Selenium only for JavaScript-rendered pages.
 - Implemented both browser automation and HTTP-based scraping.
 - Used Requests for faster scraping where direct HTTP access was sufficient.
-- 📁 Saves all images into a structured local folder  and allow downloading it 
-
+- Saves 📁  all images into a structured local folder  and allow downloading it 
+```
 ---
 
 ## 🛠️ Tech Stack
