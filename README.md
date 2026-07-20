@@ -32,8 +32,33 @@ Whether you're training a machine learning model, designing a UI, or building a 
 | Backend      | Python                          |
 | Scraping     | BeautifulSoup,Requests,Selenium |
 | Deployment   | Localhost (Prototype Phase)     |
-
+|Browser Automation | ChromeDriver               |
 ---
+
+
+## 🏗️ Project Architecture
+
+               User
+                 │
+                 ▼
+         Streamlit Interface
+                 │
+                 ▼
+         Select Image Source
+                 │
+     ┌───────────┼────────────┐
+     │           │            │
+     ▼           ▼            ▼
+ Google      Flipkart      Meesho
+ Selenium     Requests     Requests
+     │           │            │
+     └───────────┼────────────┘
+                 ▼
+        Image Extraction Engine
+                 ▼
+        Download & Save Images
+                 ▼
+      Local Organized Dataset
 
 ## 📦 Installation
 
