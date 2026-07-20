@@ -17,9 +17,9 @@ Whether you're training a machine learning model, designing a UI, or building a 
 ## 🧠 What It Does
 
 - 🔍 Accepts a search term via a clean web interface  
-- 📡 Scrapes Google Images using BeautifulSoup + Requests  
+- 📡 Scrapes Google Images using BeautifulSoup + Requests + Selenium
 - 📁 Saves all images into a structured local folder  
-- 🧼 Built with Flask for smooth routing and input handling  
+- 🧼 Built with Streamlit for smooth routing and input handling  
 - 💡 Designed to be modular, scalable, and easy to extend
 
 ---
