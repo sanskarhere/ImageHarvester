@@ -2,7 +2,7 @@
 
 What if collecting hundreds of images from Google was as simple as typing a keyword and clicking a button?
 
-**Image Scraper** is a Flask-based web app that automates image scraping from Google. Designed for developers, researchers, and creators who need fast access to visual data—without the manual grind.
+**Image Scraper** is a Streamlit-based web app that automates image scraping from Google. Designed for developers, researchers, and creators who need fast access to visual data—without the manual grind.
 
 ---
 
@@ -27,18 +27,18 @@ Whether you're training a machine learning model, designing a UI, or building a 
 ## 🛠️ Tech Stack
 
 | Layer        | Tools Used                      |
-|--------------|----------------------------------|
-| Frontend     | HTML, CSS                        |
-| Backend      | Python, Flask                    |
-| Scraping     | BeautifulSoup, Requests          |
-| Deployment   | Localhost (Prototype Phase)      |
+|--------------|---------------------------------|
+| Frontend     | Streamlit                       |
+| Backend      | Python                          |
+| Scraping     | BeautifulSoup,Requests,Selenium |
+| Deployment   | Localhost (Prototype Phase)     |
 
 ---
 
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/sanskarhere/Image-Scraper-Flask.git
-cd image-scraper-flask
+git clone https://github.com/sanskarhere/ImageHarvestor.git
+cd ImageHarvestor
 pip install -r requirements.txt
 python app.py
