@@ -2,7 +2,7 @@
 
 What if collecting hundreds of images from Google was as simple as typing a keyword and clicking a button?
 
-**Image Scraper** is a Streamlit-based web app that automates image scraping from Google. Designed for developers, researchers, and creators who need fast access to visual data—without the manual grind.
+**Image Scraper** is a Streamlit-based web app that automates image scraping from Google,Flipkart,meesho web app. Designed for developers, researchers, and creators who need fast access to visual data—without the manual grind.
 
 ---
 
