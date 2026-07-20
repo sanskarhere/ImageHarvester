@@ -1,4 +1,4 @@
- <mark> <h1>📸 <i>Image Scraper — Automate  Image Collection</i></h1> </mark>
+<h1>📸 <i>  <mark> Image Scraper — Automate  Image Collection </mark> </i></h1> 
 
 What if collecting hundreds of images from Google was as simple as typing a keyword and clicking a button?
 
@@ -17,8 +17,6 @@ Manual image collection is slow, repetitive, and error-prone. Whether you're tra
 - Selected Selenium only for JavaScript-rendered pages.
 - Implemented both browser automation and HTTP-based scraping.
 - Used Requests for faster scraping where direct HTTP access was sufficient.
-- Built a modular scraper architecture, making new platforms easy to integrate.
-- Developed a simple Streamlit UI for an end-to-end scraping workflow.
 - 📁 Saves all images into a structured local folder  and allow downloading it 
 
 ---
