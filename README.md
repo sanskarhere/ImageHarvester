@@ -37,29 +37,29 @@ Whether you're training a machine learning model, designing a UI, or building a 
 
 
 ## 🏗️ Project Architecture
+```mermaid
+flowchart TD
 
-               User
-                 │
-                 ▼
-         Streamlit Interface
-                 │
-                 ▼
-         Select Image Source
-                 │
-     ┌───────────┼────────────┐
-     │           │            │
-     ▼           ▼            ▼
- Google      Flipkart      Meesho
- Selenium     Requests     Requests
-     │           │            │
-     └───────────┼────────────┘
-                 ▼
-        Image Extraction Engine
-                 ▼
-        Download & Save Images
-                 ▼
-      Local Organized Dataset
+A[👤 User]
 
+A --> B[🎨 Streamlit Interface]
+
+B --> C{Select Source}
+
+C --> D[🌐 Google Images<br/>Selenium]
+
+C --> E[🛒 Flipkart<br/>Requests + BeautifulSoup]
+
+C --> F[🛍️ Meesho<br/>Requests + BeautifulSoup]
+
+D --> G[🖼️ Image Extraction Engine]
+E --> G
+F --> G
+
+G --> H[⬇️ Download Images]
+
+H --> I[📂 Organized Local Dataset]
+```
 
 
 ## 📦 Installation
