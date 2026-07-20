@@ -16,11 +16,13 @@ Whether you're training a machine learning model, designing a UI, or building a 
 
 ## 🧠 What It Does
 
-- 🔍 Accepts a search term via a clean web interface  
-- 📡 Scrapes Google Images using BeautifulSoup + Requests + Selenium
-- 📁 Saves all images into a structured local folder  
-- 🧼 Built with Streamlit for smooth routing and input handling  
-- 💡 Designed to be modular, scalable, and easy to extend
+- Developed a simple Streamlit UI  To Search Term 🔍 and Download  Image Folder
+- Selected Selenium only for JavaScript-rendered pages.
+- Implemented both browser automation and HTTP-based scraping.
+- Used Requests for faster scraping where direct HTTP access was sufficient.
+- Built a modular scraper architecture, making new platforms easy to integrate.
+- Developed a simple Streamlit UI for an end-to-end scraping workflow.
+- 📁 Saves all images into a structured local folder  and allow downloading it 
 
 ---
 
@@ -33,33 +35,8 @@ Whether you're training a machine learning model, designing a UI, or building a 
 | Scraping     | BeautifulSoup,Requests,Selenium |
 | Deployment   | Localhost (Prototype Phase)     |
 |Browser Automation | ChromeDriver               |
+
 ---
-
-
-## 🏗️ Project Architecture
-```mermaid
-flowchart TD
-
-A[👤 User]
-
-A --> B[🎨 Streamlit Interface]
-
-B --> C{Select Source}
-
-C --> D[🌐 Google Images<br/>Selenium]
-
-C --> E[🛒 Flipkart<br/>Requests + BeautifulSoup]
-
-C --> F[🛍️ Meesho<br/>Requests + BeautifulSoup]
-
-D --> G[🖼️ Image Extraction Engine]
-E --> G
-F --> G
-
-G --> H[⬇️ Download Images]
-
-H --> I[📂 Organized Local Dataset]
-```
 
 
 ## 📦 Installation
