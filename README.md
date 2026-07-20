@@ -1,4 +1,4 @@
- <mark> <h1>📸 <i>Image Scraper — Automate  Image Collection with Selenium and Requests</i></h1> </mark>
+ <mark> <h1>📸 <i>Image Scraper — Automate  Image Collection</i></h1> </mark>
 
 What if collecting hundreds of images from Google was as simple as typing a keyword and clicking a button?
 
