@@ -6,16 +6,13 @@ What if collecting hundreds of images from Google was as simple as typing a keyw
 
 ---
 
-## 🚀 Why I Built This
+## 🚀 Why 
 
-Manual image collection is slow, repetitive, and error-prone.  
-Whether you're training a machine learning model, designing a UI, or building a dataset—this tool saves time and sanity by automating the entire process.
-“Search. Scrape. Save. Simplified.”
+Manual image collection is slow, repetitive, and error-prone. Whether you're training a machine learning model, designing a UI, or building a dataset—this tool saves time and sanity by automating the entire process. “Search. Scrape. Save. Simplified.”
 
 ---
 
-## 🧠 What It Does
-
+## ✨ Features
 - Developed a simple Streamlit UI  To Search Term 🔍 and Download  Image Folder
 - Selected Selenium only for JavaScript-rendered pages.
 - Implemented both browser automation and HTTP-based scraping.
