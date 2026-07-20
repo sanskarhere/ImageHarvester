@@ -1,33 +1,29 @@
-
-from flask import Flask,render_template,request
-
+import requests
+from bs4 import BeautifulSoup as bs
+import logging 
 import os
+import streamlit as st
+from Src.google_main import scrap_images
 
-import main
+st.set_page_config(page_title='Image Scraper',page_icon=':camera:',layout='wide')
 
-app=Flask(__name__)
+st.title('Google Image Scraper')
 
-app.secret_key='dbhjsiuyf'
-
-s=main.Scrap()
-
-@app.route('/')
-def home():
-
-    return render_template('index.html')
-
-@app.route('/scrap',methods=['GET','POST'])
-def scrap():
-
-    Query=request.form.get('content')
-
-    Response=s.Scraper(Query)
-
-    return render_template('index.html',Response=Response)
+st.markdown('### _Enter a search term to scrape images from Google Images_')
+name=st.text_input('hidden',label_visibility='collapsed')
 
 
+if name is not None and name.strip() != '':
+    bar=st.progress(0)
 
-if __name__ =="__main__":
-    print("Starting Flask app on http://127.0.0.1:5000")
-    app.run(debug=True, host='127.0.0.1', port=5000)
-    app.run(debug=True)
+    
+    import time
+    for i in range(101):
+        time.sleep(0.1)
+        bar.progress(i,text='Loading')
+    
+    status=scrap_images(name)
+    st.error('Scraping Failed') if status is None else st.success('Scraping Completed')
+        
+    
+    

@@ -1,0 +1,30 @@
+# Windows operating system junk files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.lnk
+*.ini
+[Dd]esktop.ini
+$RECYCLE.BIN/
+System Volume Information/
+
+# Common PC text editor and IDE temporary files
+*.tmp
+*.bak
+*.swp
+*.log
+
+# Visual Studio Code specific settings
+.vscode/*
+!.vscode/extensions.json
+.history/
+
+# Node/JavaScript dependencies (if applicable)
+node_modules/
+npm-debug.log*
+
+# Python compiled files (if applicable)
+__pycache__/
+*.py[cod]
+*$py.class
