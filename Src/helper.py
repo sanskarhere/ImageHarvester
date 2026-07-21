@@ -1,6 +1,7 @@
 import requests 
 from Src.logger import logging
 import os
+import shutil
 
 def fetch_image(link:str)->bytes:
     try:
@@ -37,4 +38,20 @@ def save_images(name:str,links:list):
     return False
 
                 
+
+def zip_images(name:str)->str:
+    path=os.path.join(os.getcwd(),name)
+    print(path)
+
+    zip_name=name
+
+    if os.path.exists(path):
+
+        #shutil automatically compresses the directory into a zip on hdd _> path
+        shutil.make_archive(zip_name,'zip',path)
+
+        return True
+    
+    else:
+        False #folder doesnt exist->warning
 
